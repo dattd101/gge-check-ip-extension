@@ -2,7 +2,7 @@ async function fetchIP() {
   const ipDiv = document.getElementById("ip");
   ipDiv.textContent = "Fetching...";
   try {
-    const res = await fetch("https://ifconfig.me/ip");
+    const res = await fetch("https://ipinfo.io/ip");
     const ip = await res.text();
     ipDiv.textContent = ip.trim();
   } catch (err) {
